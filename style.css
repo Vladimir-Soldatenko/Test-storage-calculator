@@ -1,0 +1,99 @@
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.sliders {
+    display: flex;
+    align-items: center;
+}
+
+.sliders__storage {
+    margin-right: 100px;
+}
+
+.sliders__storage__label,
+.sliders__transfer__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.sliders__inp {
+    display: block;
+    width: 250px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.sliders__inp::before {
+    content: '0';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.sliders__inp::after {
+    content: '1000';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+}
+
+.company {
+    list-style: none;
+    padding: 0;
+}
+
+.company__price__bar {
+    height: 40px;
+    width: 5px;
+    background: gray;
+    transition: all 0.3s;
+}
+
+.company__name {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    position: relative;
+}
+
+.company__price {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+}
+
+
+.company__select {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    left: 130px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 10px;
+    background: #100e0e;
+    cursor: ew-resize;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 7px;
+    background: #100e0e;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}

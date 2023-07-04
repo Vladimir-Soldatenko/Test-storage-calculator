@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Storage price</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sliders">
+        <div class="sliders__storage">
+          <label class="sliders__storage__label" for="storage__inp">
+            Storage: <span class="storage__size">0</span> GB
+          </label>
+          <input
+            id="storage__inp"
+            type="range"
+            name="storage"
+            step="1"
+            min="0"
+            max="1000"
+            value="0"
+            class="sliders__inp"
+          />
+        </div>
+        <div class="sliders__transfer">
+          <label class="sliders__transfer__label" for="transfer__inp">
+            Transfer: <span class="transfer__size">0</span> GB
+          </label>
+          <input
+            id="transfer__inp"
+            type="range"
+            name="transfer"
+            step="1"
+            min="0"
+            max="1000"
+            value="0"
+            class="sliders__inp"
+          />
+        </div>
+      </div>
+      <ul class="company">
+        <li class="company__name">
+          <span>backblaze.com</span>
+          <div class="company__price">
+            <div class="company__price__bar backblaze__bar"></div>
+            <span class="company__price__num backblaze">0</span> $
+          </div>
+        </li>
+
+        <li class="company__name">
+          <span>bunny.net</span>
+          <select class="company__select" name="bunny">
+            <option selected value="hdd">HDD</option>
+            <option value="ssd">SSD</option>
+          </select>
+          <div class="company__price">
+            <div class="company__price__bar bunny__bar"></div>
+            <span class="company__price__num bunny">0</span> $
+          </div>
+        </li>
+
+        <li class="company__name">
+          <span>scaleway.com</span>
+          <select class="company__select" name="scaleway">
+            <option selected value="multi">Multi</option>
+            <option value="single">Single</option>
+          </select>
+          <div class="company__price">
+            <div class="company__price__bar scaleway__bar"></div>
+            <span class="company__price__num scaleway">0</span> $
+          </div>
+        </li>
+
+        <li class="company__name">
+          <span>vultr.com</span>
+          <div class="company__price">
+            <div class="company__price__bar vultr__bar"></div>
+            <span class="company__price__num vultr">0</span> $
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
